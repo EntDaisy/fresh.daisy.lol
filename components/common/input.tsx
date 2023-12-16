@@ -1,4 +1,4 @@
-import { Search } from "lucide-preact";
+import { Search } from "$icons";
 import { JSX } from "preact/jsx-runtime";
 import { merge } from "../../lib/tw-merge.ts";
 
