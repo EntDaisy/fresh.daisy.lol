@@ -17,7 +17,7 @@ export default function Input(
         props.class ?? props.className,
       )}
     >
-      <Search class="flex-shrink-0 w-[18px] h-[18px] ml-px stroke-zinc-400" />
+      <Search class="flex-shrink-0 w-[18px] h-[18px] ml-px fill-zinc-400" />
       <input
         {...{ ...props, class: undefined, className: undefined }}
         class="bg-transparent w-full ml-2 placeholder:text-zinc-400 leading-4 focus:outline-none"

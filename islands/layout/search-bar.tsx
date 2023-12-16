@@ -11,7 +11,7 @@ export default function SearchBar() {
       class="flex items-center h-[42px] bg-zinc-900 border border-zinc-800 px-3 font-semibold rounded-xl cursor-pointer"
       onClick={() => searchModal?.showModal()}
     >
-      <Search class="flex-shrink-0 w-[18px] h-[18px] ml-px stroke-zinc-400" />
+      <Search class="flex-shrink-0 w-[18px] h-[18px] ml-px fill-zinc-400" />
       <span class="w-full ml-2 text-zinc-400 leading-4 text-left">
         검색
       </span>
