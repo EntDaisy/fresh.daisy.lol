@@ -1,6 +1,6 @@
 import { Brush, Compass, EvaIcon } from "$icons";
+import SearchBar from "../../islands/layout/search-bar.tsx";
 import { join } from "../../lib/tw-merge.ts";
-import Input from "../common/input.tsx";
 import Logo from "../common/logo.tsx";
 
 interface SidebarProps {
@@ -25,7 +25,7 @@ export default function Sidebar({ pathname }: SidebarProps) {
           <Logo class="w-8 h-8" />
           <h1 class="font-display font-semibold text-[26px]">Daisy</h1>
         </a>
-        <Input placeholder="검색" />
+        <SearchBar />
       </div>
       <div class="mt-3">
         {([

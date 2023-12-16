@@ -1,8 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
-import { type PageProps } from "$fresh/server.ts";
 import { SadLogo } from "../components/common/logo.tsx";
 
-export default function Error404({ Component, url }: PageProps) {
+export default function Error404() {
   return (
     <>
       <Head>
@@ -27,7 +26,7 @@ export default function Error404({ Component, url }: PageProps) {
           </p>
           <a
             href="/"
-            class="text-brand-600 dark:text-brand-400 text-lg 0.5sm:text-base font-medium leading-5 underline underline-offset-4 cursor-pointer transition-colors duration-300 ease-in-out"
+            class="text-brand-400 text-lg 0.5sm:text-base font-medium leading-5 underline underline-offset-4 cursor-pointer transition-colors duration-300 ease-in-out"
           >
             홈으로 돌아가기
           </a>

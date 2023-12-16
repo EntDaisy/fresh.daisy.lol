@@ -1,6 +1,7 @@
 import { Partial } from "$fresh/runtime.ts";
 import { type PageProps } from "$fresh/server.ts";
 import Sidebar from "../components/layout/sidebar.tsx";
+import SearchModal from "../islands/layout/search-modal.tsx";
 
 export default function App({ Component, url }: PageProps) {
   return (
@@ -32,6 +33,7 @@ export default function App({ Component, url }: PageProps) {
             <Component />
           </Partial>
         </main>
+        <SearchModal />
       </body>
     </html>
   );
