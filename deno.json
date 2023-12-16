@@ -24,6 +24,7 @@
     "$fresh/": "https://deno.land/x/fresh@1.6.1/",
     "$icons": "./eva-icons/index.ts",
     "$std/": "https://deno.land/std@0.209.0/",
+    "@headlessui/react": "https://esm.sh/@headlessui/react@1.7.17?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat&external=preact",
     "hotkeys-js": "https://esm.sh/hotkeys-js@3.13.2",
     "tailwind-merge": "npm:tailwind-merge@2.1.0",
     "preact": "https://esm.sh/preact@10.19.3",

@@ -9,3 +9,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+dialog[open]::backdrop {
+  animation: fade-backdrop 0.5s ease forwards;
+}
+
+dialog.hide::backdrop {
+  animation: fade-backdrop 0.5s ease backwards;
+  animation-direction: reverse;
+}
+
+@keyframes fade-backdrop {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

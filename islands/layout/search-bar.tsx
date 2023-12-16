@@ -1,15 +1,11 @@
-import { IS_BROWSER } from "$fresh/runtime.ts";
 import { Search } from "$icons";
+import { isOpen } from "./search-modal.tsx";
 
 export default function SearchBar() {
-  const searchModal = IS_BROWSER
-    ? document.getElementById("search-modal") as HTMLDialogElement | null
-    : null;
-
   return (
     <button
       class="flex items-center h-[42px] bg-zinc-900 border border-zinc-800 px-3 font-semibold rounded-xl cursor-pointer"
-      onClick={() => searchModal?.showModal()}
+      onClick={() => isOpen.value = true}
     >
       <Search class="flex-shrink-0 w-[18px] h-[18px] ml-px fill-zinc-400" />
       <span class="w-full ml-2 text-zinc-400 leading-4 text-left">
