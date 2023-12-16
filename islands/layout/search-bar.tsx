@@ -1,5 +1,5 @@
 import { IS_BROWSER } from "$fresh/runtime.ts";
-import { Search } from "lucide-preact";
+import { Search } from "$icons";
 
 export default function SearchBar() {
   const searchModal = IS_BROWSER
