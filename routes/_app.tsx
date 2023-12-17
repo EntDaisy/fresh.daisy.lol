@@ -20,8 +20,11 @@ export default function App({ Component, url }: PageProps) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap"
         />
-        <link rel="stylesheet" href="/pretendardvariable-dynamic-subset.css" />
-        <link rel="stylesheet" href="/styles.css" />
+        <link
+          rel="stylesheet"
+          href="/assets/pretendardvariable-dynamic-subset.css"
+        />
+        <link rel="stylesheet" href="/assets/styles.css" />
       </head>
       <body
         class="grid grid-cols-[16rem_1fr] w-screen bg-zinc-950"

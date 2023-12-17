@@ -4,6 +4,8 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $_middleware from "./routes/_middleware.ts";
+import * as $api_auth_auth_ from "./routes/api/auth/[...auth].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $layout_search_bar from "./islands/layout/search-bar.tsx";
 import * as $layout_search_modal from "./islands/layout/search-modal.tsx";
@@ -13,6 +15,8 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/_middleware.ts": $_middleware,
+    "./routes/api/auth/[...auth].tsx": $api_auth_auth_,
     "./routes/index.tsx": $index,
   },
   islands: {
