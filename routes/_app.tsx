@@ -2,8 +2,11 @@ import { Partial } from "$fresh/runtime.ts";
 import { type PageProps } from "$fresh/server.ts";
 import Sidebar from "../components/layout/sidebar.tsx";
 import SearchModal from "../islands/layout/search-modal.tsx";
+import { DaisyState } from "./_middleware.ts";
 
-export default function App({ Component, url }: PageProps) {
+export default function App(
+  { Component, state }: PageProps<unknown, DaisyState>,
+) {
   return (
     <html>
       <head>
@@ -30,7 +33,7 @@ export default function App({ Component, url }: PageProps) {
         class="grid grid-cols-[16rem_1fr] w-screen bg-zinc-950"
         f-client-nav
       >
-        <Sidebar pathname={url.pathname} />
+        <Sidebar token={state.token} />
         <main>
           <Partial name="main">
             <Component />

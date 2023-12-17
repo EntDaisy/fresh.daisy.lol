@@ -2,18 +2,15 @@ import { Dialog, Transition } from "@headlessui/react";
 import { signal } from "@preact/signals";
 import hotkeys from "hotkeys-js";
 import { Fragment } from "preact";
-import { useEffect, useRef } from "preact/hooks";
+import { useEffect } from "preact/hooks";
 import Input from "../../components/common/input.tsx";
 
 export const isOpen = signal(false);
 
 export default function SearchModal() {
-  const ref = useRef<HTMLDialogElement>(null);
-
   useEffect(() => {
     hotkeys("ctrl+k, command+k", () => {
-      if (!ref.current?.open) ref.current?.showModal();
-      else ref.current?.close();
+      isOpen.value = true;
       return false;
     });
   }, []);
@@ -54,19 +51,5 @@ export default function SearchModal() {
         </div>
       </Dialog>
     </Transition>
-    // <dialog
-    //   ref={ref}
-    //   id="search-modal"
-    //   class="w-full p-3 max-w-sm min-h-[64px] bg-zinc-950 rounded-[18px] backdrop:bg-zinc-500/30 backdrop:backdrop-blur-sm"
-    //   onClick={(e) => {
-    //     if (e.target === ref.current) hideModal();
-    //   }}
-    // >
-    //   <Input
-    //     placeholder="검색"
-    //     shortcut="ESC"
-    //     onShortcutClick={() => hideModal()}
-    //   />
-    // </dialog>
   );
 }

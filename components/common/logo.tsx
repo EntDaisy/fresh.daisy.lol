@@ -2,7 +2,7 @@ interface LogoProps {
   class?: string;
 }
 
-export default function Logo(props: LogoProps) {
+export const Logo = (props: LogoProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +23,9 @@ export default function Logo(props: LogoProps) {
       />
     </svg>
   );
-}
+};
 
-export function SadLogo(props: LogoProps) {
+export const SadLogo = (props: LogoProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -52,4 +52,4 @@ export function SadLogo(props: LogoProps) {
       />
     </svg>
   );
-}
+};

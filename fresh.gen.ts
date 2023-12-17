@@ -7,6 +7,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $_middleware from "./routes/_middleware.ts";
 import * as $api_auth_auth_ from "./routes/api/auth/[...auth].tsx";
 import * as $index from "./routes/index.tsx";
+import * as $layout_profile from "./islands/layout/profile.tsx";
 import * as $layout_search_bar from "./islands/layout/search-bar.tsx";
 import * as $layout_search_modal from "./islands/layout/search-modal.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -20,6 +21,7 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/layout/profile.tsx": $layout_profile,
     "./islands/layout/search-bar.tsx": $layout_search_bar,
     "./islands/layout/search-modal.tsx": $layout_search_modal,
   },
